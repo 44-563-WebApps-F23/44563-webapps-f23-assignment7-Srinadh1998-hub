@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+         <style>
+            .flex-container {
+            display: flex;  flex-direction:row;
+            background-color:rgb(119, 82, 219);
+            }
+
+            .flex-container > div { 
+                 background-color: #3ca067; 
+                 margin: 10px;  padding: 20px;    font-size: 30px;
+            }
+
+            @media (max-width: 600px) { 
+	        .flex-container{
+		    flex-direction:column;
+		    background-color: rgb(170, 45, 91);
+	        }
+	}
+</style>
+<title>Lab Assignment-7</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h2 class="display-4" style="border: 4px double rgb(65, 225, 161); font-family: 'Times New Roman', Times, serif;background-color: blueviolet;">Find the treasure by Bokkisam Srinadh</h2>
+		
+    <div class="Danger" id="data">
+        <div class="row" style="background-color: burlywood;">
+		<p class="col-sm-10" id="search_traps" style="font-family: Georgia, 'Times New Roman', Times, serif;" >Click on the locations to search for treasure, beware the traps</p>
+        </div>
+        <div class="row" style="background-color: aquamarine;">
+        <p class = "col-sm-5" id="locations" style="font-family: Georgia, 'Times New Roman', Times, serif;">Number of locations checked is zero</p>
+        </div>
+        <div class="row" style="background-color: rgb(189, 237, 54);">
+        <p class = "col-sm-5" id="penalty" style="font-family: Georgia, 'Times New Roman', Times, serif;">Penalty is zero</p>
+        </div>
+        <p class = "lead" id="click_help" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: rgb(175, 108, 239);">Click for help</p>
+        <p class="lead" id="help" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: chartreuse;">Help report</p>
+	</div>
+    <hr>
+    <h6 class="col-md-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: cornflowerblue;font-size: large;">Play Area:</h6>
+    <div class="container" id="puzzle" style="border-collapse: collapse;border-spacing:0cqi;">
+        <div class="row">
+            <div class="col-md-2 "><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+        </div>
+    </div>
+</body>
+<script>
+	function creatingNewDiv(){
+		let element = document.createElement("div")
+		element.innerHTML = "Expected Output"
+		element.style.color = "Blue"
+
+		let container = document.getElementById('data')
+		container.appendChild(element)	
+	}
+</script>
+</html>
