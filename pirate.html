@@ -46,6 +46,8 @@
         </div>
         <p class = "lead" id="click_help" onclick="help()" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: rgb(175, 108, 239);">Click for help</p>
         <p class="lead" id="help" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: chartreuse;">Help report</p>
+        <br>
+        <div id="button" type="button" class="btn btn-success" onclick="reset()">Reset Game</div>
 	</div>
     <hr>
     <h6 class="col-md-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: cornflowerblue;font-size: large;">Play Area:</h6>
@@ -162,6 +164,15 @@
     help_text = document.getElementById("help")
     help_text.innerHTML=`Help report ${report}`
   }
+  function reset() {
+            checkCount = 0;
+            penalty = 0
+            treasureLocation = Math.round(Math.random() * (24));
+            trapLocation = Math.round(Math.random() * (24));
+            document.getElementById("locations").innerHTML = `Number of locations checked is ${checkCount}`
+            document.getElementById("penalty").innerHTML = `Penalty is ${penalty}`
+
+        }
 </script>
 
 
