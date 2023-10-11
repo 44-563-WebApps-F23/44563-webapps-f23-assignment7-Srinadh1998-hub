@@ -18,7 +18,7 @@
 	  }
 	}
 </style>
-<title>WebAppsAssignment07mergerpage</title>
+<title>WebAppsmerger</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -34,12 +34,12 @@
 
 
 <body>
-    <h1>Manideep builds a merger</h1>
+    <h1>Srinath builds a merger</h1>
     <br>
     <hr>
     <div class="mb-3">
         <label for="text">Enter Text : </label>
-        <input type="text" id="text" name="text" placeholder="Enter text to be in new div" autofocus>
+        <input type="text" id="text" name="text" autofocus>
     </div>
 
     <br>
@@ -52,9 +52,7 @@
 	<p> Press the button to create an new element of type div and then add it to the container.</p>
     <div class=" container text-center">
 		<button onclick="makeNewDiv()">Add end</button>
-        <button onclick="addFront()" >Add Front</button>
-        <button onclick="remove()">Remove</button>
-        <button onclick="swap()">Swap</button>
+        
     </div>
         
 	
@@ -82,29 +80,7 @@
             mergerItems[Math.floor(lengthOfmergerItems/2)].remove()
         }
     }
-    function addFront(){
-        let element = document.createElement("div")
-        element.innerHTML = document.getElementById("text").value;
-        element.className = "merger"
-        element.style.color = "orange"
-
-        let parent = document.getElementsByClassName("merger")[0].parentNode
-        let childElement = document.getElementsByClassName("merger")[0]
-        parent.insertBefore(element,childElement)
-    }
-    function swap()
-  {
-    let mergerItemss = document.getElementsByClassName("merger")
-    let mergerItemssLength = mergerItemss.length
-    let firstElement = mergerItemss[Math.round(Math.random()*(mergerItemssLength-1))]
-    let secondElement = mergerItemss[Math.round(Math.random()*(mergerItemssLength-1))]
-
-    let parentElement = firstElement.parentNode
     
-    const siblingA = firstElement.nextSibling === secondElement ? firstElement : firstElement.nextSibling;
-    secondElement.parentNode.insertBefore(firstElement, secondElement);
-    parentElement.insertBefore(secondElement, siblingA);
-  }
 
 </script>
 </html>	
