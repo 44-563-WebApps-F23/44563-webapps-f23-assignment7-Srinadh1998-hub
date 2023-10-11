@@ -44,57 +44,126 @@
         <div class="row" style="background-color: rgb(189, 237, 54);">
         <p class = "col-sm-5" id="penalty" style="font-family: Georgia, 'Times New Roman', Times, serif;">Penalty is zero</p>
         </div>
-        <p class = "lead" id="click_help" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: rgb(175, 108, 239);">Click for help</p>
+        <p class = "lead" id="click_help" onclick="help()" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: rgb(175, 108, 239);">Click for help</p>
         <p class="lead" id="help" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: chartreuse;">Help report</p>
 	</div>
     <hr>
     <h6 class="col-md-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;background-color: cornflowerblue;font-size: large;">Play Area:</h6>
     <div class="container" id="puzzle" style="border-collapse: collapse;border-spacing:0cqi;">
         <div class="row">
-            <div class="col-md-2 "><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 0" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(0)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 1" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(1)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 2" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(2)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 3" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(3)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 4" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(4)"></div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 5" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(5)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 6" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(6)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 7" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(7)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 8" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(8)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 9" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(9)"></div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 10" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(10)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 11" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(11)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 12" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(12)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 13" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(13)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 14" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(14)"></div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 15" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(15)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 16" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(16)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 17" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(17)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 18" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(18)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 19" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(19)"></div>
         </div>
         <div class="row">
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="image/place.jpg" alt="HiddenSite" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 20" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(20)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 21" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(21)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 22" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(22)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 23" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(23)"></div>
+            <div class="col-md-2"><img src="image/place.jpg" id="image 24" alt="HiddenSite" style="width:100px;height:100px;" onclick="check(24)"></div>
         </div>
     </div>
-</body>
 <script>
-	function creatingNewDiv(){
-		let element = document.createElement("div")
-		element.innerHTML = "Expected Output"
-		element.style.color = "Blue"
+    let ids = []
+  for(let i=0;i<25;i++)
+  {
+    ids[i]="image "+i;
+  }
+  let checkCount = 0
+  let penalty = 0
+  let lastCheck = 0
+  let treasureLocation = 5
+  let trapLocation = 18
+  let gameOver = false
+  function check(p)
+  {
+    if(gameOver)
+    {
+      return
+    }
+    const img_id = ids[p]
+    tre_loc_img = document.getElementById(img_id)
+    if(p==treasureLocation)
+    {
+      tre_loc_img.src = "image/treasure.jpg"
+      gameOver=true
+      penalty = penalty-3
+    }
+    else if (p== trapLocation)
+    {
+      tre_loc_img.src = "image/trap.jpg"
+      gameOver=true
+      penalty=penalty+4
+    }
+    else
+    {
+      tre_loc_img.src="image/pirates.jpg"
+    }
+    checkCount=checkCount+1
+    penalty=penalty+1
+    loc_text = document.getElementById("locations")
+    loc_text.innerHTML = `Number of locations checked is ${checkCount}`
+    pen_text = document.getElementById("penalty")
+    pen_text.innerHTML=`Penalty is ${penalty}`
+    lastCheck=p
 
-		let container = document.getElementById('data')
-		container.appendChild(element)	
-	}
+  }
+  function help()
+  {
+    let col = lastCheck%5
+    let row = Math.floor(lastCheck/5)
+
+    let treasureCol = treasureLocation%5
+    let treasureRow = Math.floor(treasureLocation/5)
+
+    let col_diff = Math.abs(col-treasureCol) 
+    let row_diff = Math.abs(row-treasureRow)
+
+    let report = ""
+
+    if(((col_diff<=1)&&(row_diff==0))||((col_diff==0)&&(row_diff<=1)))
+    {
+      report = "Can smell it"
+    }
+    else if(col_diff+row_diff==2)
+    {
+      report = "Close Matie"
+    }
+    else
+    {
+      report = "Step Faster"
+    }
+    penalty=penalty+2
+    pen_text = document.getElementById("penalty")
+    pen_text.innerHTML=`Penalty is ${penalty}`
+    help_text = document.getElementById("help")
+    help_text.innerHTML=`Help report ${report}`
+  }
 </script>
+
+
+</body>
 </html>
